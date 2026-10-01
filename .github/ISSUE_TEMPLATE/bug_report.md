@@ -15,7 +15,7 @@ labels: bug
 1.
 2.
 
-**Extension version** (chrome://extensions → doInit OrgLens):
+**Extension version** (chrome://extensions → doDev):
 
 **Browser and OS:**
 

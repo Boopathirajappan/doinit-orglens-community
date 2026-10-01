@@ -1,6 +1,6 @@
 ---
 name: Feature request
-about: An idea to make doInit OrgLens more useful
+about: An idea to make doDev more useful
 title: "[Idea] "
 labels: enhancement
 ---

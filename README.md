@@ -1,8 +1,8 @@
-# doInit OrgLens
+# doDev
 
 **Free Chrome extension for Salesforce admins and developers** – find any metadata, see who can access what and why, compare users, permissions and orgs, and monitor limits and jobs.
 
-This repository is the public home of doInit OrgLens: **report bugs, request features and read the privacy policy here**. The extension's source code is kept in a separate private repository.
+This repository is the public home of doDev: **report bugs, request features and read the privacy policy here**. The extension's source code is kept in a separate private repository.
 
 | | |
 |---|---|
@@ -23,4 +23,4 @@ Everything runs in your browser, using the Salesforce login you already have. No
 When you report a problem, describe it and include screenshots **without** customer names, record data, usernames or org IDs.
 
 ---
-doInit OrgLens is free to use. It is not affiliated with or endorsed by Salesforce, Inc. Salesforce is a trademark of Salesforce, Inc.
+doDev is free to use. It is not affiliated with or endorsed by Salesforce, Inc. Salesforce is a trademark of Salesforce, Inc.

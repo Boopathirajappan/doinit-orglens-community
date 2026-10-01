@@ -1,4 +1,4 @@
-# doInit OrgLens
+# doDev
 
 Free Chrome extension for Salesforce admins and developers – find any metadata, see who can access what and why, compare users, permissions and orgs, and monitor limits and jobs.
 

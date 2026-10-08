@@ -21,30 +21,28 @@ The Extension runs entirely inside your browser. It reads information from the S
 - ✗ Nothing in Salesforce is changed, except when you choose to import or update records (see *Data you put in*).
 
 ## How your data is protected
-| Protection | What it means for you |
-|---|---|
-| **Locked to your own orgs** | Every request is checked before it is sent: it must be HTTPS and go to a Salesforce org you are logged into in this browser (the org you opened the Extension from, or another org you are logged into for org-to-org comparison). Requests to any other address are refused. |
-| **No redirects followed** | If a reply tries to send the request somewhere else, it is stopped – the session can't be passed on. |
-| **Browser-level block** | The Extension's content security policy lets its pages connect to Salesforce domains only, so even a fault in the code could not send data to another site. |
-| **Session only where it belongs** | The session is sent only in the request to the org it belongs to – never in a cookie to another site, never in a web address, never written to disk by the Extension. |
-| **No remote or injected code** | All code is inside the Extension package; nothing is downloaded or evaluated at run time (`script-src 'self'`, no `eval`). |
-| **Safe display of data** | Salesforce data is always shown as plain text, never interpreted as HTML, so a record value can't run code in the page. |
-| **Encrypted on your computer** | The few things kept (below) are encrypted with AES-256-GCM. The key is created on your computer and the browser keeps it so it can be used but not read out. |
-| **Checked messages** | The Extension's own pages only accept messages from each other. |
+- **Locked to your own orgs** – every request is checked before it is sent: HTTPS only, and only to a Salesforce org you are logged into in this browser. Any other address is refused.
+- **No redirects followed** – a reply that points somewhere else is stopped, so your session can't be passed on.
+- **Blocked by the browser too** – the Extension's pages are only allowed to connect to Salesforce, so even a fault in the code could not send data elsewhere.
+- **Your session stays where it belongs** – sent only to its own org; never saved and never put in a web address.
+- **No remote code** – everything runs from the installed package; nothing is downloaded or run on the fly.
+- **Data shown as plain text** – a record value can never run code in the page.
+- **Encrypted on your computer** – what is kept (below) is encrypted with AES-256-GCM, with a key the browser can use but not read out.
+- **Checked messages** – the Extension's own pages only accept messages from each other.
+
 
 ## What is kept on your computer
 Only these, encrypted, in your browser's storage for this Extension – never Salesforce records, and never sent anywhere:
 
-| What | Details | How to remove it |
-|---|---|---|
-| Saved queries | The query text and the name you give it | *Delete* in ☆ Saved |
-| Query history | Your last 100 queries: text, object, org name, time and row count | *Clear history* |
-| Recent runs | The inputs you chose in each tool (e.g. names of profiles, users or orgs, an object or record Id) – never results | The × next to each one |
-| Last session | Which tools were open, their names and last inputs or query, so they can be restored | Close the tools |
-| Recent searches | Your last 8 searches in the search box per org (the name and Id of what you opened) | *Clear* |
-| Preferences | Compare Code & Metadata scope per pair of orgs, which places Where Is It Used looks in, hidden table columns | Change them in the tool |
+- **Saved queries** – the query text and the name you give it. *Remove:* Delete in ☆ Saved.
+- **Query history** – your last 100 queries: text, object, org name, time and row count. *Remove:* Clear history.
+- **Recent runs** – the inputs you chose in each tool (e.g. names of profiles, users or orgs, an object or record Id), never results. *Remove:* the × next to each one.
+- **Last session** – which tools were open, their names and last inputs or query, so they can be restored. *Remove:* close the tools.
+- **Recent searches** – your last 8 searches in the search box per org (the name and Id of what you opened). *Remove:* Clear.
+- **Preferences** – Compare Code & Metadata scope per pair of orgs, where Where Is It Used looks, hidden table columns. *Change them in the tool.*
 
 Clearing your browser's site data for the Extension removes all of this, including the key.
+
 
 ## Data you put in
 - **CSV files and pasted rows** (Data Import) are read inside the open page only – they are not uploaded anywhere except, when you confirm, as the records you chose to create, update or delete in your org.
@@ -56,10 +54,9 @@ Clearing your browser's site data for the Extension removes all of this, includi
 **Download** (CSV or Excel), **Copy**, **⬇ Export**, **Gap permission set** and **Print** create the file or text locally on your computer, through your browser. What you do with it afterwards is up to you.
 
 ## Permissions and why they are needed
-| Permission | Why |
-|---|---|
-| `cookies` | Read your existing Salesforce session cookie so the Extension can call the Salesforce API as you, without asking you to log in again. |
-| Host access to Salesforce domains only (`*.salesforce.com`, `*.force.com`, `*.cloudforce.com`, `*.salesforce-setup.com`, `*.visualforce.com`, plus Government Cloud `*.salesforce.mil`, `*.force.mil`, `*.cloudforce.mil` and Salesforce on Alibaba Cloud `*.sfcrmproducts.cn`) | Call the Salesforce REST, Tooling and Metadata APIs of your org, and find the sessions of other orgs you are logged into (for org-to-org comparison). No other sites are accessed. |
+- **cookies** – reads your existing Salesforce session, so the Extension can call the Salesforce API as you without asking you to log in again.
+- **Access to Salesforce sites** – the Extension is allowed onto Salesforce's own domains (such as salesforce.com and force.com, including Salesforce Government Cloud and Salesforce on Alibaba Cloud) so it works with whichever org you use. **It only ever contacts the specific org(s) you are logged into in this browser** – for example *your-company.my.salesforce.com* – never all Salesforce sites, and never any other website.
+
 
 ## Limited Use
 The use of information received from Salesforce APIs adheres to the Chrome Web Store User Data Policy, including the Limited Use requirements. Data is used only to provide the features you use, is never transferred to others, and is never used for advertising or to determine creditworthiness.

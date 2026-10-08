@@ -6,6 +6,7 @@ This repository is the public home of doDev: **report bugs, request features and
 
 | | |
 |---|---|
+| ⬇ **Install** | [Add doDev to Chrome – Chrome Web Store](https://chromewebstore.google.com/detail/agcjfjpmlmfbdbgfohficnccnknimhbd) |
 | 🐞 **Found a bug?** | [Open a bug report](../../issues/new?template=bug_report.md) |
 | 💡 **Have an idea?** | [Request a feature](../../issues/new?template=feature_request.md) |
 | 🔒 **Privacy policy** | [privacy.md](privacy.md) · [web page](https://doinittools.github.io/doinit-dodev-community/privacy) |

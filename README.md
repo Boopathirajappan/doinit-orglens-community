@@ -1,6 +1,6 @@
 # doDev
 
-**Free Chrome extension for Salesforce admins and developers** – find any metadata, see who can access what and why, compare users, permissions and orgs, and monitor limits and jobs.
+**Free Chrome extension for Salesforce admins and developers** – find any metadata, see who can access what and why, compare users, permissions and orgs, query data without writing SOQL, and monitor jobs.
 
 This repository is the public home of doDev: **report bugs, request features and read the privacy policy here**. The extension's source code is kept in a separate private repository.
 
@@ -8,13 +8,13 @@ This repository is the public home of doDev: **report bugs, request features and
 |---|---|
 | 🐞 **Found a bug?** | [Open a bug report](../../issues/new?template=bug_report.md) |
 | 💡 **Have an idea?** | [Request a feature](../../issues/new?template=feature_request.md) |
-| 🔒 **Privacy policy** | [privacy.md](privacy.md) · [web page](https://boopathirajappan.github.io/doinit-orglens-community/privacy) |
+| 🔒 **Privacy policy** | [privacy.md](privacy.md) · [web page](https://doinittools.github.io/doinit-dodev-community/privacy) |
 
 ## What it does
 - **Data** – Data Explorer (list-view style queries, SOQL/SOSL, record view), Data Import from CSV.
 - **Find** – Who Has Metadata Access, Who Has Record Access, Where Is It Used, Find Any Metadata (objects, fields, Apex, LWC, Aura, Visualforce, flows, profiles, permission sets, labels…).
 - **Compare** – users, permissions, role & profile members, code & metadata, objects and org settings – within one org or across orgs.
-- **Monitor** – org limits, scheduled and async jobs, APIs & events.
+- **Monitor** – scheduled and async jobs.
 
 ## Privacy in one line
 Everything runs in your browser, using the Salesforce login you already have. Nothing is sent anywhere except to your own Salesforce org, and nothing is collected by us. Details: [privacy policy](privacy.md).

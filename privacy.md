@@ -9,7 +9,7 @@ The Extension runs entirely inside your browser. It reads information from the S
 ## What the Extension accesses
 - **Your Salesforce session cookie** (`sid`), only on Salesforce domains. It is used to call the Salesforce APIs of *the same org it belongs to*, exactly as your browser already does when you use Salesforce.
 - **Salesforce data you ask to see** – for example profiles, permission sets, users, sharing, metadata, source code and records. Only what the tool you run needs is requested.
-- **Your Salesforce user's time zone and the org's theme colour**, so dates and colours look the way Salesforce shows them.
+- **Your Salesforce user's time zone**, so dates and times look the way Salesforce shows them.
 
 ## What the Extension does NOT do
 - ✗ No data is sent to us or to any third party – there is no server of ours at all.

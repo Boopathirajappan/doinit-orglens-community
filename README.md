@@ -20,6 +20,17 @@ This repository is the public home of doDev: **report bugs, request features and
 ## Privacy in one line
 Everything runs in your browser, using the Salesforce login you already have. Nothing is sent anywhere except to your own Salesforce org, and nothing is collected by us. Details: [privacy policy](privacy.md).
 
+## Is doDev safe?
+- **It only talks to Salesforce.** doDev asks for one permission (`cookies`) and access to Salesforce sites only. It cannot read or change any other website, and it adds nothing to the Salesforce pages you open.
+- **Your data stays in your browser.** There is no doDev server, no account to create and no tracking. Requests go straight from your browser to your own Salesforce org, using the login you already have – and only to the org that login belongs to.
+- **It reads – it doesn't change anything – unless you ask.** The only tools that save data are Data Import and Perform update, and both show you what will change and need you to confirm before anything is sent.
+- **Nothing installed in Salesforce.** No managed package, connected app or setup change in your org.
+- **Reviewed by Google.** Every version is checked by the Chrome Web Store before it is published.
+
+**"This extension is not trusted by Enhanced Safe Browsing"?** Chrome shows this for extensions from publishers whose account is still new – Google trusts a publisher after a few months of following its policies. It isn't about what doDev does; you can safely choose **Continue to install**. Standard Chrome settings don't show the warning.
+
+**For IT teams:** the extension ID is `agcjfjpmlmfbdbgfohficnccnknimhbd`. Details of what it accesses and how your data is protected are in the [privacy policy](privacy.md).
+
 ## Please don't post Salesforce data
 When you report a problem, describe it and include screenshots **without** customer names, record data, usernames or org IDs.
 
